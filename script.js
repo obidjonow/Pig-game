@@ -46,7 +46,7 @@ btnHold.addEventListener('click', () => {
     if (gameOver) {
         score[activePlayer] += currentScore
         document.getElementById(`score--${activePlayer}`).textContent = score[activePlayer]
-        if (score[activePlayer] >= 100) {
+        if (score[activePlayer] >= 70) {
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
             gameOver = false
         } else {
